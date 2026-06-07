@@ -1,8 +1,7 @@
 import hero_image_1 from "@/assets/gabon_flags.jpg";
 import hero_image_2 from "@/assets/gabon_flag_ks.jpg";
-import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import { Input } from "./ui/input";
 import { CiSearch } from "react-icons/ci";
 
@@ -10,7 +9,7 @@ const heroImages = [hero_image_1, hero_image_2];
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {

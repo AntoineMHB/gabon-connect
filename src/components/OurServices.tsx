@@ -1,4 +1,3 @@
-import { GoPeople } from "react-icons/go";
 import { Button } from "./ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { useNavigate } from "react-router-dom";
