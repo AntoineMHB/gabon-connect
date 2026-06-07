@@ -7,16 +7,19 @@ import {
 import { Button } from "./ui/button";
 import { Heart, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import gabonConnectLogo from "@/assets/gabonConnectLogo.png";
+import gabonConnectLogo from "@/assets/gabon_connect_rw_logo.png";
+import { FiUserPlus } from "react-icons/fi";
+import { CiLogin } from "react-icons/ci";
+import { IoIosHelpCircleOutline } from "react-icons/io";
 
 const navItems = [
-  { label: "Home", to: "/" },
-  { label: "login", to: "/login" },
-  { label: "signup", to: "/signup" },
-  //   { label: "Programs", to: "/programs" },
-  //   { label: "International Internships", to: "/internships" },
-  //   { label: "Gallery", to: "/gallery" },
-  //   { label: "Contact", to: "/contacts" },
+  {
+    label: "Centre d'assistance",
+    to: "/centre_d_assistance",
+    icon: <IoIosHelpCircleOutline />,
+  },
+  { label: "Connexion", to: "/login", icon: <CiLogin /> },
+  { label: "Inscription", to: "/signup", icon: <FiUserPlus /> },
 ];
 
 function TopNavBar() {
@@ -30,9 +33,9 @@ function TopNavBar() {
           <img
             src={gabonConnectLogo}
             alt="hameau_des_jeunes_logo"
-            className="h-12 w-12 object-contain block shrink-0"
+            className="h-full w-[150px] object-contain block shrink-0"
           />
-          <p className="font-heading text-lg font-bold leading-none whitespace-nowrap">
+          <p className="font-heading text-lg text-[#4664B2] font-bold leading-none whitespace-nowrap">
             Gabon Connect
           </p>
         </div>
@@ -45,7 +48,7 @@ function TopNavBar() {
           </SheetTrigger>
 
           <SheetContent side="right" className="w-72">
-            <nav className="flex flex-col gap-6 mt-10">
+            <nav className="flex flex-col gap-6 mt-10 text-[#4664B2]">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
@@ -71,21 +74,27 @@ function TopNavBar() {
       </div>
 
       {/* ===== Desktop ===== */}
-      <div className="hidden md:flex justify-center h-full ">
-        <NavigationMenu className="flex items-center gap-10 h-20">
+      <div className="hidden md:flex justify-between h-full ">
+        <div className="flex items-center justify-center">
           <img
             src={gabonConnectLogo}
-            alt="hameau_des_jeunes_logo"
-            className="h-12 w-12"
+            alt="gabon_connect_logo"
+            className="h-full w-full object-contain"
           />
-
+        </div>
+        <NavigationMenu className="flex items-center justify-center gap-10 h-20 text-[#4664B2] font-semibold">
           <NavigationMenuList className="flex items-center gap-10">
             {navItems.map((item) => (
               <NavigationMenuItem
                 key={item.label}
-                className="font-heading cursor-pointer hover:font-bold"
+                className="font-heading cursor-pointer hover:font-bold hover:bg-gray-100 p-2 rounded-sm"
               >
-                <Link to={item.to}>{item.label}</Link>
+                <Link to={item.to}>
+                  <div className="flex items-center justify-center gap-3">
+                    {item.icon}
+                    {item.label}
+                  </div>
+                </Link>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
