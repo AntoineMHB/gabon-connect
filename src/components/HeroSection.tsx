@@ -22,7 +22,7 @@ function HeroSection() {
   }, []);
   return (
     <>
-      <section className="w-full h-[300px] sm:h-[600px] md:h-[500px] lg:h-[400px] relative overflow-hidden">
+      <section className="w-full h-[400px] sm:h-[600px] md:h-[500px] lg:h-[630px] relative overflow-hidden">
         {/* Hero images */}
         {heroImages.map((image, index) => (
           <img

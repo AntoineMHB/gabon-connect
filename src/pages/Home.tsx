@@ -1,14 +1,14 @@
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import OurServices from "@/components/OurServices";
 import TopNavBar from "@/components/TopNavBar";
+import YourNeeds from "@/components/YourNeeds";
 
 function Home() {
   return (
     <>
       <TopNavBar />
       <HeroSection />
-      <OurServices />
+      <YourNeeds />
       <Footer />
     </>
   );
