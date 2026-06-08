@@ -26,7 +26,7 @@ function TopNavBar() {
   const navigate = useNavigate();
 
   return (
-    <header className=" fixed block top-0 z-50 w-full h-20 border-b bg-background">
+    <header className=" fixed block top-0 z-50 w-full h-20  bg-background">
       {/* ===== Mobile / Tablet ===== */}
       <div className="flex md:hidden items-center justify-between px-4 h-full">
         <div className="flex items-center gap-2">
@@ -75,7 +75,10 @@ function TopNavBar() {
 
       {/* ===== Desktop ===== */}
       <div className="hidden md:flex justify-between h-full ">
-        <div className="flex items-center justify-center">
+        <div
+          className="flex items-center justify-center"
+          onClick={() => navigate("/")}
+        >
           <img
             src={gabonConnectLogo}
             alt="gabon_connect_logo"

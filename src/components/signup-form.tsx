@@ -1,70 +1,87 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 export function SignupForm({ ...props }: React.ComponentProps<typeof Card>) {
   return (
     <Card {...props}>
       <CardHeader>
-        <CardTitle>Create an account</CardTitle>
+        <CardTitle className="text-[#4664B2]">Créer un compte</CardTitle>
         <CardDescription>
-          Enter your information below to create your account
+          Saisissez vos informations ci-dessous pour créer votre compte
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form>
           <FieldGroup>
             <Field>
-              <FieldLabel htmlFor="name">Full Name</FieldLabel>
-              <Input id="name" type="text" placeholder="John Doe" required />
+              <FieldLabel htmlFor="name" className="text-[#4664B2]">
+                Nom et prénom
+              </FieldLabel>
+              <Input id="name" type="text" placeholder="Jean Nze" required />
             </Field>
             <Field>
-              <FieldLabel htmlFor="email">Email</FieldLabel>
+              <FieldLabel htmlFor="email" className="text-[#4664B2]">
+                Email
+              </FieldLabel>
               <Input
                 id="email"
                 type="email"
                 placeholder="m@example.com"
                 required
               />
-              <FieldDescription>
-                We&apos;ll use this to contact you. We will not share your email
-                with anyone else.
-              </FieldDescription>
+              {/* <FieldDescription>
+                Nous utiliserons ces informations pour vous contacter. Nous ne
+                partagerons votre adresse e-mail avec personne d'autre.
+              </FieldDescription> */}
             </Field>
             <Field>
-              <FieldLabel htmlFor="password">Password</FieldLabel>
+              <FieldLabel htmlFor="password" className="text-[#4664B2]">
+                Mot de passe
+              </FieldLabel>
               <Input id="password" type="password" required />
               <FieldDescription>
-                Must be at least 8 characters long.
+                Doit comporter au moins 8 caractères.
               </FieldDescription>
             </Field>
             <Field>
-              <FieldLabel htmlFor="confirm-password">
-                Confirm Password
+              <FieldLabel htmlFor="confirm-password" className="text-[#4664B2]">
+                Confirmez le mot de passe
               </FieldLabel>
               <Input id="confirm-password" type="password" required />
-              <FieldDescription>Please confirm your password.</FieldDescription>
+              <FieldDescription>
+                Veuillez confirmer votre mot de passe.
+              </FieldDescription>
             </Field>
             <FieldGroup>
               <Field>
-                <Button type="submit">Create Account</Button>
-                <Button variant="outline" type="button">
-                  Sign up with Google
+                <Button type="submit" className="bg-[#4664B2]">
+                  Créer un compte
+                </Button>
+                <Button
+                  variant="outline"
+                  type="button"
+                  className="text-[#4664B2]"
+                >
+                  Inscrivez-vous avec Google
                 </Button>
                 <FieldDescription className="px-6 text-center">
-                  Already have an account? <a href="#">Sign in</a>
+                  Vous avez déjà un compte ?{" "}
+                  <a href="/login" className="text-[#4664B2]">
+                    Se connecter
+                  </a>
                 </FieldDescription>
               </Field>
             </FieldGroup>
@@ -72,5 +89,5 @@ export function SignupForm({ ...props }: React.ComponentProps<typeof Card>) {
         </form>
       </CardContent>
     </Card>
-  )
+  );
 }

@@ -8,7 +8,7 @@ import legalisationImg from "@/assets/legalisation.jpg";
 import paymentImg from "@/assets/payment.jpg";
 import rdvImg from "@/assets/rdv_picture.png";
 
-const programs = [
+const services = [
   {
     id: 1,
     slug: "passeport",
@@ -50,7 +50,7 @@ const programs = [
     subtitle: "Empowering Through Learning",
     description: "Document d'identité officiel de la diaspora",
     image: carteConsulaireImg,
-    readMoreBtn: "Read More >>",
+    readMoreBtn: "En savoir plus >>",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const programs = [
     slug: "rendezVous",
     description: "Prise de RDV intelligente, rappels SMS automatiques",
     image: rdvImg,
-    readMoreBtn: "Read More >>",
+    readMoreBtn: "En savoir plus >>",
   },
 ];
 
@@ -78,16 +78,16 @@ function OurServices() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-12  px-5 py-10 max-w-5xl mx-auto">
-          {programs.map((item) => {
+          {services.map((item) => {
             return (
               <Card
                 key={item.id}
-                onClick={() => navigate(`/programs/${item.slug}`)}
+                onClick={() => navigate(`/services/${item.slug}`)}
                 className="transition-transform duration-300 hover:scale-105 bg-white drop-shadow-gray-100 rounded-xl overflow-hidden md:w-117.5"
               >
                 <img
                   src={item.image}
-                  alt="program_image"
+                  alt="service_image"
                   className="block h-[250px] w-full  object-cover"
                 />
 
@@ -107,7 +107,7 @@ function OurServices() {
 
                 <Button
                   className="bg-[#4664B2] text-white mx-6 mb-4 rounded-lg"
-                  onClick={() => navigate(`/programs/${item.slug}`)}
+                  onClick={() => navigate(`/services/${item.slug}`)}
                 >
                   {item.readMoreBtn}
                 </Button>

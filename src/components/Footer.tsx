@@ -37,7 +37,7 @@ function Footer() {
               <ul className="space-y-2">
                 <li>
                   <ScrollLink
-                    to="/"
+                    to="/centre_d_assistance"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -48,7 +48,7 @@ function Footer() {
                 </li>
                 <li>
                   <RouterLink
-                    to="/about"
+                    to="/signup"
                     className="text-white font-light hover:font-bold transition-colors cursor-pointer text-sm sm:text-sm"
                   >
                     Inscription
@@ -56,7 +56,7 @@ function Footer() {
                 </li>
                 <li>
                   <RouterLink
-                    to="/impact"
+                    to="/login"
                     className="text-white font-light hover:font-bold transition-colors cursor-pointer text-sm sm:text-sm"
                   >
                     Connexion
@@ -64,7 +64,7 @@ function Footer() {
                 </li>
                 <li>
                   <RouterLink
-                    to="/impact"
+                    to="/nos_services"
                     className="text-white font-light hover:font-bold transition-colors cursor-pointer text-sm sm:text-sm"
                   >
                     Nos services
