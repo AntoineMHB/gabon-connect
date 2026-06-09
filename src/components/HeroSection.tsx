@@ -1,11 +1,23 @@
 import hero_image_1 from "@/assets/gabon_flags.jpg";
 import hero_image_2 from "@/assets/gabon_flag_ks.jpg";
 import hero_image_3 from "@/assets/preso_gabon.jpg";
-import hero_image_4 from "@/assets/gabon_1.jpg";
-import hero_image_5 from "@/assets/gabon_2.jpg";
-import hero_image_6 from "@/assets/gabon_3.jpg";
-import hero_image_7 from "@/assets/gabon_4.jpg";
-import hero_image_8 from "@/assets/gabon_5.avif";
+
+import visit_gbn_1 from "@/assets/visit_gabon_imgs/temp_image_0AC44FF6-6053-41A4-9B51-024C51E2A228.jpg";
+import visit_gbn_2 from "@/assets/visit_gabon_imgs/temp_image_22EEB27F-6F52-4016-A7C9-EEAA97874D2F.jpg";
+import visit_gbn_3 from "@/assets/visit_gabon_imgs/temp_image_0AC44FF6-6053-41A4-9B51-024C51E2A228.jpg";
+import visit_gbn_4 from "@/assets/visit_gabon_imgs/temp_image_42B4AA87-424F-4FA6-9D60-75CDF7C893AA.jpg";
+import visit_gbn_5 from "@/assets/visit_gabon_imgs/FB_IMG_1741729154055.jpg";
+import visit_gbn_6 from "@/assets/visit_gabon_imgs/FB_IMG_1781001078355.jpg";
+import visit_gbn_7 from "@/assets/visit_gabon_imgs/FB_IMG_1781001086357.jpg";
+import visit_gbn_8 from "@/assets/visit_gabon_imgs/FB_IMG_1781001092099.jpg";
+import visit_gbn_9 from "@/assets/visit_gabon_imgs/FB_IMG_1781001367681.jpg";
+import visit_gbn_10 from "@/assets/visit_gabon_imgs/FB_IMG_1781001348267.jpg";
+import visit_gbn_11 from "@/assets/visit_gabon_imgs/FB_IMG_1781001168706.jpg";
+import visit_gbn_12 from "@/assets/visit_gabon_imgs/FB_IMG_1781001142684.jpg";
+import visit_gbn_13 from "@/assets/visit_gabon_imgs/FB_IMG_1781001117830.jpg";
+import visit_gbn_14 from "@/assets/visit_gabon_imgs/FB_IMG_1781001110378.jpg";
+import visit_gbn_15 from "@/assets/visit_gabon_imgs/FB_IMG_1781001100977.jpg";
+import visit_gbn_16 from "@/assets/visit_gabon_imgs/FB_IMG_1781001097030.jpg";
 
 import { useEffect, useState } from "react";
 
@@ -13,14 +25,35 @@ import { Input } from "./ui/input";
 import { CiSearch } from "react-icons/ci";
 
 const heroImages = [
+  visit_gbn_11,
+  visit_gbn_12,
+  visit_gbn_13,
+  visit_gbn_14,
+  visit_gbn_15,
+  visit_gbn_1,
+  visit_gbn_2,
+  visit_gbn_3,
+  visit_gbn_4,
   hero_image_1,
   hero_image_2,
   hero_image_3,
-  hero_image_4,
-  hero_image_5,
-  hero_image_6,
-  hero_image_7,
-  hero_image_8,
+  visit_gbn_16,
+  visit_gbn_11,
+  visit_gbn_12,
+  visit_gbn_13,
+  visit_gbn_14,
+  visit_gbn_15,
+  visit_gbn_5,
+  visit_gbn_6,
+  visit_gbn_7,
+  visit_gbn_8,
+  visit_gbn_9,
+  visit_gbn_10,
+  visit_gbn_11,
+  visit_gbn_12,
+  visit_gbn_13,
+  visit_gbn_14,
+  visit_gbn_15,
 ];
 
 function HeroSection() {

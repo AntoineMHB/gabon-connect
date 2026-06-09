@@ -7,7 +7,8 @@ import {
 import { Button } from "./ui/button";
 import { Heart, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import gabonConnectLogo from "@/assets/gabon_connect_rw_logo.png";
+
+import gbn_connect_logo from "@/assets/gbn_connect_logo.png";
 import { FiUserPlus } from "react-icons/fi";
 import { CiLogin } from "react-icons/ci";
 import { IoIosHelpCircleOutline } from "react-icons/io";
@@ -31,7 +32,7 @@ function TopNavBar() {
       <div className="flex md:hidden items-center justify-between px-4 h-full">
         <div className="flex items-center gap-2">
           <img
-            src={gabonConnectLogo}
+            src={gbn_connect_logo}
             alt="hameau_des_jeunes_logo"
             className="h-full w-[150px] object-contain block shrink-0"
           />
@@ -80,9 +81,9 @@ function TopNavBar() {
           onClick={() => navigate("/")}
         >
           <img
-            src={gabonConnectLogo}
+            src={gbn_connect_logo}
             alt="gabon_connect_logo"
-            className="h-full w-full object-contain"
+            className="h-[120px] w-full object-cover"
           />
         </div>
         <NavigationMenu className="flex items-center justify-center gap-10 h-20 text-[#4664B2] font-semibold">
